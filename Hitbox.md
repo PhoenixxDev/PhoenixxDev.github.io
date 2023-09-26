@@ -33,6 +33,16 @@ local myHitbox = hitboxController:Init(String: VariantTag, Model: Character, Vec
 
 ---
 
+{: .fs-6 .fw-300 }
+**Hitbox Types**
+| Function       | Usage         |
+|:-------------|:------------------|
+| :InitAnchored(<same as :Init:>)                                                                                     | For a Still-Placed hitbox (like an explosion somewhere)              |
+| :InitSpherecast(Variant, Character, Int: Radius, Int: StudsAhead, MaxDuration, Visualize, <optional> CustomOffset)  | For Projectile-based hitbox (like character flying in SuperRush)     |
+|                                                                                                                     | StudsAhead is how many studs ahead of the character you want to cast |
+
+---
+
 **Starting Hit Detection**
 {: .fs-6 .fw-300 }
 ```lua
