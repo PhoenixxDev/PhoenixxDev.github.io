@@ -10,7 +10,7 @@ local hitboxController = require(replicatedStorage.Modules.Hitbox)
 
 
 
-**Creating a Hitbox**
+**Creating a Hitbox**\n
 Initializing a hitbox structure, we start it at a later time (unless you call :Start() instantly after ig)
 ```lua
 local myHitbox = hitboxController:Init(String: VariantTag, Model: Character, Vector3: Size, Bool: Visualize, ?optional? CFrame: CustomOffset)
