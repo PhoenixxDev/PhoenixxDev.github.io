@@ -5,6 +5,6 @@ layout: home
 
 Check out how to use the [Hitbox] module to get started.
 
-----
+
 
 [Hitbox]: ../Hitbox.html
