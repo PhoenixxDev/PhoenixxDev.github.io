@@ -8,9 +8,11 @@ layout: default
 local hitboxController = require(replicatedStorage.Modules.Hitbox)
 ```
 
+{: .fs-6 .fw-300 }
+{: .fs-6 .fw-300 }
 
-
-**Creating a Hitbox**\n
+**Creating a Hitbox**
+{: .fs-6 .fw-300 }
 Initializing a hitbox structure, we start it at a later time (unless you call :Start() instantly after ig)
 ```lua
 local myHitbox = hitboxController:Init(String: VariantTag, Model: Character, Vector3: Size, Bool: Visualize, ?optional? CFrame: CustomOffset)
