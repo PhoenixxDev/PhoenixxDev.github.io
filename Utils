@@ -1,0 +1,31 @@
+---
+title: Utils
+layout: default
+---
+
+```lua
+Bool: utils:CanPerformAction(Model: character, Bool: ignoreMovementAttributes)
+-- whether player is able to do a normal action (checks attributes like Attacking, Stunned, Blocking, etc)
+```
+```lua
+Int: utils:getWalkSpeed(Model: character)
+-- returns the character's base walkspeed (will determine based on stats/perks/race/etc
+```
+```lua
+void: utils:stun(Model: character, <optional> stunDuration)
+-- Stuns the player for the given time (reccommended that you give a duration, as it will automatically account for being stunned by other stun calls)
+```
+```lua
+void: utils:endStun(Model: character)
+```
+**Sending Client FX**
+```lua
+void: utils:sendClientFX(Int: Range, Model: Character, String: ActionName, Table: Data)
+--[[
+
+  Range: Max range a player can be from the given Character
+  Character: The character that is performing the action involving the FX (although this variable is just for range)
+  ActionName: 
+
+]]
+```
