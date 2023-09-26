@@ -69,12 +69,12 @@ myHitbox:Start(function(hit)
 	-- all this damage stuff will be explained in the Combat module
 	-- but basically we do this to validate that 1: call is genuinely from the server and was not somehow exploited by the client in anyway
 	_G.validGuids = _G.validGuids or {}
-		_G.validGuids[eventGuid] = {character = player.Character, skill = "SuperRush", expires = os.clock() + 1}
-		task.delay(1, function()
-			if _G.validGuids[eventGuid] then
-				_G.validGuids[eventGuid] = nil
-			end
-		end)
+	_G.validGuids[eventGuid] = {character = player.Character, skill = "SuperRush", expires = os.clock() + 1}
+	task.delay(1, function()
+		if _G.validGuids[eventGuid] then
+			_G.validGuids[eventGuid] = nil
+		end
+	end)
 
 	ClientAction:Fire(player, {
 		Action = "Damage",
