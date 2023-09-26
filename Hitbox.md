@@ -63,12 +63,12 @@ local myHitbox = hitboxController:Init("SuperRush", player.Character, Vector3.ne
 
 -- when we're ready to begin hit detection
 myHitbox:Start(function(hit)
-		local hitChar = hit.Parent
+	local hitChar = hit.Parent
 
-    -- use BindableEvent ClientAction in ServerStorage if calling from server (i.e. a skill), and calling the normal remote otherwise (explained in Networks page)
-    -- all this damage stuff will be explained in the Combat module
-    -- but basically we do this to validate that 1: call is genuinely from the server and was not somehow exploited by the client in anyway
-    _G.validGuids = _G.validGuids or {}
+	-- use BindableEvent ClientAction in ServerStorage if calling from server (i.e. a skill), and calling the normal remote otherwise (explained in Networks page)
+	-- all this damage stuff will be explained in the Combat module
+	-- but basically we do this to validate that 1: call is genuinely from the server and was not somehow exploited by the client in anyway
+	_G.validGuids = _G.validGuids or {}
 		_G.validGuids[eventGuid] = {character = player.Character, skill = "SuperRush", expires = os.clock() + 1}
 		task.delay(1, function()
 			if _G.validGuids[eventGuid] then
@@ -76,13 +76,13 @@ myHitbox:Start(function(hit)
 			end
 		end)
 
-    ClientAction:Fire(player, {
-			Action = "Damage",
-			Skill = "SuperRush",
-			Variant = 1, -- first damage value in the damage table in stats for skill
-			Var = hit,
-			guid = eventGuid
-		}, nil)
+	ClientAction:Fire(player, {
+		Action = "Damage",
+		Skill = "SuperRush",
+		Variant = 1, -- first damage value in the damage table in stats for skill
+		Var = hit,
+		guid = eventGuid
+	}, nil)
 end)
 
 -- when we want it to end (i.e. end of an animation or despawn time)
