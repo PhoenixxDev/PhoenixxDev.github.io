@@ -44,6 +44,7 @@ For a Still-Placed hitbox (like an explosion somewhere)
 :InitSpherecast(Variant, Character, Int: Radius, Int: StudsAhead, MaxDuration, Visualize, <optional> CustomOffset)
 ```
 For Projectile-based hitbox (like character flying in SuperRush) *(StudsAhead is how many studs ahead of the character you want to cast)*
+
 ---
 
 **Starting Hit Detection**
