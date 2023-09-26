@@ -50,7 +50,7 @@ myHitbox:Start(<optional but you should use it> Function: onHitCallback)
 ```lua
 myHitbox:Stop()
 ```
-yes that's literally it, just call :Stop() to stop the hitbox (you can start it again)
+yes that's literally it, just call :Stop() to stop the hitbox (you can't start it again)
 
 ---
 
