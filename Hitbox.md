@@ -52,7 +52,7 @@ myHitbox:Stop()
 ```
 yes that's literally it, just call :Stop() to stop the hitbox (you can start it again)
 
---
+---
 
 **Full Example**
 {: .fs-6 .fw-300 }
