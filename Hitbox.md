@@ -3,6 +3,7 @@ title: Hitbox
 layout: default
 ---
 
+{: .fs-6 .fw-300 }
 **Initialization**
 ```lua
 local hitboxController = require(replicatedStorage.Modules.Hitbox)
