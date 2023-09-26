@@ -1,6 +1,6 @@
 ---
 title: Hitbox
-layout: home
+layout: default
 ---
 
 **Initialization**
